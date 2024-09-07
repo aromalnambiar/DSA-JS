@@ -3,7 +3,6 @@
 const boxes = [1, 2, 3, 4, 5];
 
 function forEachArray(array) {
-    console.log("start");
     const mapping =  array.forEach((row1) => {
         array.forEach((row2) => {
             console.log(row1, row2);
@@ -29,3 +28,7 @@ function forArray(array) {
 forEachArray(boxes);
 
 forArray(alphas);
+
+
+
+// Big O of this problem O(n * n) => n * n =  n^2 there for it would be O(n^2)

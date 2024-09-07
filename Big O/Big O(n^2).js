@@ -2,7 +2,7 @@
 
 const boxes = [1, 2, 3, 4, 5];
 
-function mapArray(array) {
+function forEachArray(array) {
     console.log("start");
     const mapping =  array.forEach((row1) => {
         array.forEach((row2) => {
@@ -13,4 +13,19 @@ function mapArray(array) {
     return mapping;
 }
 
-mapArray(boxes);
+
+// problem 2
+
+const alphas = ['a', 'b', 'c', 'd', 'e'];
+
+function forArray(array) {
+   for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < array.length; j++) {
+        console.log(array[i], array[j]);
+    }
+   }
+}
+
+forEachArray(boxes);
+
+forArray(alphas);
